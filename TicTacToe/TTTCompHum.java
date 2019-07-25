@@ -4,8 +4,6 @@ public class TTTCompHum {
 
     public static void main(String[] args) {
 
-        // Ask human to enter his input
-        // Computer to analyze and insert its next move
         Scanner sc = new Scanner(System.in);
         System.out.println(" -------------- Hey, Welcome to Legendary Tic-Tac-Toe game ------------ ");
         System.out.print("Before beginning, Tell me your name: ");
@@ -15,20 +13,22 @@ public class TTTCompHum {
         System.out.println(you + " will be playing as X and I'll be playing as O");
         System.out.println("Let's play " + you);
         TicTacToeCompHum ticTacToe = new TicTacToeCompHum();
+        String val="";
+        int count=0;
         do {
-
-
             if (ticTacToe.getCurrentPlayer().equals("Human")) {
-                String val;
                 do {
                     System.out.println(you + ", please enter a desired location in row[A-C] and column[1-3] like A1/B2: ");
                     val = sc.next();
-                } while (!ticTacToe.splitAndPlaceMark(val));
+                } while (!ticTacToe.placeMark(val,ticTacToe.getCurrentKey()));
                 ticTacToe.changePlayer();
+                ticTacToe.printBoard();
             }
             else{
-                ticTacToe.computerGame();
+                //System.out.println(count);
+                ticTacToe.computerGame(val,count++);
                 ticTacToe.changePlayer();
+                ticTacToe.printBoard();
             }
         } while (!ticTacToe.checkForWin() && !ticTacToe.isBoardFull());
         if(ticTacToe.isBoardFull() && !ticTacToe.checkForWin()){
@@ -39,14 +39,11 @@ public class TTTCompHum {
             ticTacToe.printBoard();
             ticTacToe.changePlayer();
             if(ticTacToe.getCurrentPlayer().equals("Human")){
-                System.out.println(you + "Win, Congratulations");
+                System.out.println(you + " Win, Congratulations");
             }
             if(ticTacToe.getCurrentPlayer().equals("Computer")){
                 System.out.println("I win, Better luck next time");
-
             }
         }
-
-
     }
 }
