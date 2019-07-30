@@ -3,10 +3,10 @@ Tic-tac-toe game is created to relish our childhood favorite game.
 You can check about the game through the wiki link https://en.wikipedia.org/wiki/Tic-tac-toe
 
 Steps to reproduce:
-	1. If you have any IDE, you can clone through the git which is https://github.com/aravind-akr/tic-tac-toe.git and run the application from the <MainClass>.java.
-	2. If not, run git clone https://github.com/aravind-akr/tic-tac-toe.git to the desired location and the file path, run:
-	           javac <MainProgram>.java - To compile 
-	           java <MainProgram> - To run
+1. If you have any IDE, you can clone through the git which is https://github.com/aravind-akr/tic-tac-toe.git and run the application from the <MainClass>.java.
+2. If not, run git clone https://github.com/aravind-akr/tic-tac-toe.git to the desired location and the file path, run:
+         javac <MainProgram>.java - To compile 
+         java <MainProgram> - To run
 
 
 There are two versions for this game:
