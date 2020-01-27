@@ -11,7 +11,7 @@ Steps to reproduce:
 
 There are two versions for this game:
 1. Human Vs. Human 
-2. Computer Vs. Computer
+2. Human Vs. Computer
 
 Human Vs. Human: Files generated for this:
 1. TTTHumHum - Main class
@@ -19,7 +19,7 @@ Human Vs. Human: Files generated for this:
 	
 	You need two humans to run this program, i.e., this is a 2 player game. 
 
-Computer Vs. Computer: Files generated for this:
+Human Vs. Computer: Files generated for this:
 1. TTTCompHum - Main class
 2. TicTacToeCompHum - Supporting class.    
     	
